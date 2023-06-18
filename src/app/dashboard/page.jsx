@@ -1,3 +1,5 @@
+import styles from "./page.module.css";
+
 export default function Dashboard() {
-  return <div>dashboard</div>;
+  return <div className={styles.container}>dashboard</div>;
 }

@@ -1,3 +1,5 @@
+import styles from './page.module.css';
+
 export default function Contact() {
-  return <div>contact</div>;
+  return <div className={styles.container}>contact</div>;
 }
