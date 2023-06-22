@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import Darkmode from "../darkmode/darkmode";
 
 const links = [
   {
@@ -42,6 +43,7 @@ export default function Navbar() {
         Ulugland
       </Link>
       <div className={styles.links}>
+        <Darkmode />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
