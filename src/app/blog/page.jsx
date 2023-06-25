@@ -2,6 +2,15 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+export async function generateMetadata({ params }) {
+  const post = await getData(params.id);
+
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+}
+
 async function getData() {
   const res = await fetch("http://localhost:3000/api/posts", {
     cache: "no-store",

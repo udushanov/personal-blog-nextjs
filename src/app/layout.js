@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ulugbek",
+  title: "Ulugland",
   description: "NextJS tutorial",
 };
 

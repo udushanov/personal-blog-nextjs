@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import useSWR from "swr";
 
+export const metadata = {
+  title: "Dashboard",
+  description: "Dashboard page",
+};
+
 export default function Dashboard() {
   // const [data, setData] = useState([]);
   // const [error, setError] = useState(false);
